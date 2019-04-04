@@ -34,7 +34,7 @@ spec:
           items:
           - path: "labels"
             fieldRef:
-            fieldPath: metadata.labels
+          - fieldPath: metadata.labels
       imagePullSecrets:
         - name: wercker
 ---
@@ -53,5 +53,4 @@ spec:
     app: twitter-feed
     color: blue
   type: ClusterIP
-  
 ---
