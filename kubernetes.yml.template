@@ -33,7 +33,8 @@ spec:
         downwardAPI:
           items:
           - path: "labels"
-            fieldRef: "fieldPath: metadata.labels"
+            fieldRef: 
+            - fieldPath: metadata.labels
       imagePullSecrets:
         - name: wercker
 ---
